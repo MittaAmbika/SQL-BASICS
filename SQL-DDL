@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS emp;
+EMPEMP.PUBLICEMP.PUBLIC.EMPLOYEEEMPEMPEMP.PUBLICEMP
+DESC TABLE public.employees;
+EMP.PUBLIC.EMPLOYEES
+ALTER TABLE public.employees ADD COLUMN Location varchar(30);
+ALTER TABLE public.employees ADD COLUMN Sate varchar(30);
+ALTER TABLE public.employees modify FIRST_NAME varchar(35);
+Alter table public.employees drop column SATE;
+Drop table employees;
+
