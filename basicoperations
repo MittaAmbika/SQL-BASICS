@@ -1,0 +1,33 @@
+create dataHRINFOHRINFO.PUBLICbase if not exists hrinfo;
+EMPHRINFOHRINFO.PUBLICHRINFO.PUBLIC.HRINFORMATION
+HRINFO.PUBLICHRINFO.PUBLIC
+---table creation-------------
+
+create table hrinfo(
+empid varchar(20),
+firstname varchar(20),
+lastname varchar(25),
+location varchar(25),
+salary number(8,2)
+);
+---data insert into table----------
+insert into hrinfo values
+(100,'raj','gali','mbnr',20000),
+(101,'Ammu','pillu','hyd',21000),
+(102,'ambika','mitta','nrpt',22000),
+(103,'gai','kanike','kphb',30000),
+(104,'vennu','villa','kpt',37000);
+-----data fetching from table-------
+Select *from hrinfo;
+------deleting data from table------
+delete from hrinformation;
+drop table hrinformation;
+------------contatination of coulumn method-1----------
+select firstname,lastname, firstname||lastname as fullname from hrinfo;
+Select empid,salary as mounthsalary,salary*12 as fullsalary from hrinfo; 
+----------contatination of coulumn method-2------------
+select concat(firstname,lastname) as fullname from hrinfo;
+-------defalutmethods------------------
+select sqrt(81) as sqrtofnumber,power(2,3) as powerofnumber,mod(100,5) as modofnumebr;
+------------
+
