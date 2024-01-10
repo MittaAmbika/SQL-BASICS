@@ -29,5 +29,8 @@ Select empid,salary as mounthsalary,salary*12 as fullsalary from hrinfo;
 select concat(firstname,lastname) as fullname from hrinfo;
 -------defalutmethods------------------
 select sqrt(81) as sqrtofnumber,power(2,3) as powerofnumber,mod(100,5) as modofnumebr;
-------------
+------------Like operator--------------------------
+select firstname, lastname,empid,len(firstname) as lengthoffirstname  from hrinfo where firstname like 'a%';-------it will retun the first name it start with the letter a
+Select firstname from hrinfo where firstname like'%a'-----return the letter which ends with a
+---------------
 
